@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es-ES">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Vivir el Verde" />
+	<!-- HTML Meta Tags -->
+	<title>Vivir el Verde</title>
+	<meta name="description" content="Sistemas de Riegos Automatizados">
+	<meta name="keywords" content="riego, riego automatizado, riegos automatizados, instalacion de riego, riego por aspersion, riegos y jardines, sistema de riego automatizado, sistema de riego automatico, sistema de riego, sistemas de riego">
+
+	<!-- Google / Search Engine Tags -->
+	<meta itemprop="name" content="Vivir el Verde">
+	<meta itemprop="description" content="Sistemas de Riegos Automatizados">
+	<meta itemprop="image" content="data:image/png;base64,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">
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="http://vivirelverde.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Vivir el Verde">
+	<meta property="og:description" content="Sistemas de Riegos Automatizados">
+	<meta property="og:image" content="data:image/png;base64,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">
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Vivir el Verde">
+	<meta name="twitter:description" content="Sistemas de Riegos Automatizados">
+	<meta name="twitter:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAW0AAACKCAMAAABW6eueAAAAwFBMVEX///9+oABHT0l7ngB1mgB4nADq7992mwBETEY3QTo9Rj/29vY0Pjf9/viuwn+KqDOEpBu/z5OhpKL09u7M2apMVE7j5OSlqabR09HHycjK1qOetl9scm1cY16Nqyi4uriZs0fm7ND09+ixxHrAw8He5sOSlpN+g3/p7tjp6umJjopTWlXa29q3yYNtlQCqv2vU37afuFe8zY1wdnGCh4MrNi6XskGUsTSdt1BiaGPA0JKtwXIkMCeovmaKqDIPIRT3PCizAAAV/klEQVR4nO2de1+iThfAQSAuyi6mlbllallaaXbd7dfW8/7f1TNnBpjbGURT6dN6/thNQBi/DGfObQbLWpfM39d2qp0skrHvNqtuwz8jLdux3UHVrfhXpO/ZtpPEVTfj35CmaxPx3qpuxz8hQ8cB2rY7rrol/4K8exS27fypuiX/gIxdOxV/N1BuXN68jLZ3V3Vbvr2A9Zd37qob8+1lThXJb4rcHVXdmu8ub9TWblJ14nWrbs13l54D1kjbp7TPq27NdxfA7DVH/m6Y3IbMYHRsj3d9eyviUtpDZ6e3tyFgAPptK3F2NskW5Bej/UJpszBgazzvNrvtwXAXFVy3gDXiPVhTMATvYcPo3nZ93/N910vuu8Oq2/e9JCaqxOlTJwcUyaDnOrlz6Tj+7He3VXUTv5N0XcLbism/L9DTuR+fEvft6U6jrE/+eLY3tu4ddwzkdXE872HHe10S9zy/a7VnTWvEYTuO2Mn9ZGetrEvie7dvte6smJqBpC+7rt3r2b7L1Yoze9t173VJ190j/zZ9UNNOvzuKKdrx/D7Ju7eX7FXcyO8jrT1mnfgJs/mGg/bD+fmPH32uT7xe1Y38VjL3HWJ4Exk2e47reyCC8t4VnKxV7lwbgLamvqeagQB7V0y1TontP6CtR7anoyZWya7aZCW5ruPbW9Rvf3CRfk1g32+zid9HrhqnOG5qhtxh7g2BvSs1WUXqJ1EtODg07b73Udjurt54FZncRLVaLYg6+G4ctrMbIFeS2yCogQSNM2z3HQrbs3de+ypyETLYRBqX+u6m6/haCNDzz3cu+ypy1KhxCa/U3QOXOOfdHnFrnDQk5Ti++77z11eSaxF2rRbdTOT977/u2+S/ePTwq59AmNX+eG/vMgmryWNYkyWo3Wb7OhdEjonA/3AT4hbIToWsKMwYUXA/X6R7rxthLvnGnawqhweBBhuU9z7bfSncinBH+5Ny3EBhE9Pkie7f0V6jHKkqWxgrX8GN39Fen1wqxoj8Cdz4krQnz+R41C/KrhSRsZdFYY4gQsC2XpM/g4JvTaKgFh7RP+vE/QpzR3dfampwc/J0dGs8yxeRK6lnB9FlEMgbOqX79mNQC14LLkXOHF2zPwXaHdKAxrH5W3Bog5mjQLthoE1uWRSFN0V3u3Kpv0Yq21sFd+OsLO0L4GbuXnR3GvESaFs35CZpzhQXYXedtEzp21EutNlBePN1+7dijDCXZnKqapNaOdp1crYI8flTga5/mv4t0iZ/16KJ6VsdoujCtOvrtG/2c3l6rUHowRDk+QLSiWTYJ0yp1jVXpxxtpphNOyeALSMh0p5ERfr+WjhSo53fPba78whjUJFaqlDOQgl2+JTvuTTiLqR92Cg4ALpwrc4/5AytJ9LpbwzfqkMvOMo+FNMmcgz9JzQ+KBXKvmyMNI6EfUfPq9C2TgpUMNG/UX4/JdodQaGrQpV9Rm8xbXquqGAUqEpUY4RibHWtAY1XH0e4x1NMW2IjS0caQiXaVoG+fyX37zH7UII2NaBCY/apIoGcmAg7pCCG9r01mkGszzoMcG++kLb03MsC+perC5k2/YSmQyfCGFmOdr1hbEJlMjmQYEcs9Tvy/HNr5LpT+KDcj1K06TipE4CzRcIYqdKGcTJExzawO7jrU4Y2NX0e9c0VimJThyd0a9eFaWMj13ZZwQJmmiygTcdJzOI9I+cKuI6RaVtXJkI3ko4pRXs/Mo+5lciFHIZK82Jvrp3Str0eLfdTxtEStEHPoioY9C+3eVTaxwZ9T41tvr0U7TPpcahe9uU+y4yRuE8nop5bA6gZcWgVmmojlqBN+7C++ZAgaAipfIW2FeHKFvr8Cf9Yija1NIsbuU2Rc2JpPcMeW6uB0E4XJHHnsLmjjpW4euVCgeh3RH28VdqGEe9ZPllZ2tKpqxXFGGG1OvN0rgGnbbOx8lDJ6kT7C04PtoeugsHGk+x5BQmMk3qIBZRCJHwuRRsG6hN9cyWi5MRYANuaz7KKBU7bntFp7appEl4XX+C2gUQ9OupGrQM+YvpeHQRK0T4tDNZsVVRjJPO6sgI/r5nT9n6mGfVrWc2HC8yr00BXwVeqj6nRBr8okr9k3YaKo1KG9m1jsbrbklyEiDHSeh9my9DBVPaUtn8fk5tA/cojJd9wWhiHIOOkaoFNlDESU66Rru81nVCGNgQPaoY63e2KjC1g3sbY9sEASZcgyWi7b+Q2fPgu9SuVmxQcFMWQAYmigs80tjrtS13fyw6RVYo2ddy/hCt5iRkjMD46PjFARlB2ltGGSsoxmClsrFQzDIWP6hNP0aQCykUeXXXah6EavKNGuHTMQtoTCP7gzuy2RXYNoxuqEf9zcwME6BLaMXg37dxMoRpFyzA0CroPDInSs4wMnIiZdqLq+0ftrhXSrk8uriLwbGpfIOCq8EozB3n5O9RgDxOP0nacUa7Ic79SceOxusxMiLstqWBESSC0LxR9jxiFSKbs9IbJ6U3UoPou7UXVym1NNkZop2n95pNovI8W8SdnhPYsGVvWuzDvl/mVl6ppYhyKjuTRDRJoqurBXJBQRMkOUXLKCO0gF6YdF/oD2xAlXN2gbRrbYoGwYxPI900rtgG7OJfJ8elYeVbWNKG9ku8k+lfLn2G0ySMgGsoQkFLyZ8YsMEMdPp8efQEtooBKMwdzZcaSA846TEPN3HguLl1RSrllQWAyTa6kUfFRGyNx2mBeB/kD09HGSIz2wSWVE0j/vt5+CcNPUQIppfFMmx7m/kcPHznanhmd7XEoq6MgMpgmZJzkKpgmBFRdigYzXkV9fx0JibVUjKMkFJrgkd7ty5VijEAXiFGodL5SU5845jfZpDKl/MRomtwINU1HWNwCpQ1+UXZkHcNntkkuGlAt9QX6tkKIjW6t33eq3s5wj2bqRqpiumysvCplmhAQufF2GiBBQZR2XbAUwULR7OYCC/ARAljVh0eUpz+kLRqQka8fW60XdWKv8y6uQpJuA85T12F+pRIcD0+wDjXhShe0ih5uxsOioD1SDf+KRFuKaE/gV8rRgQpEKdB5pqP8HGaqe7+J7aFOyktzN9KmZJja5cyvPJMTP7hpQkbG1Om+jrA+h9O+zU1uuF3P2n0s8m5oGqPiDJmMJh3Wpm7aZ/fyv820/T+xFb+wm+LSqe4dtS4TGZ2OG6kKrmNjpDHk/5pVVQJJdYxc4EuS76q+55ZFTiwGNfjZce64UJ9RXitKo019zF6mcJhfqcTIU4NSFhgn4Wow8iF1rwbaZ5m+F4dZLoW0IRlXaaz1Uqp4YpkDjg5YtqGswZFoj0XaeXQqv0EwVtYfZdMEmYyzn6rgk0CJ4zEx0K6nJjcoeyS2VByVgqp/Q1nKVqR+zRVJFGXjo6QnmvImhTY4kYqhyBZzfZLGSqTO8ZBlgw8lj4WLKXn4FNGbc4WNkQtjgKdV65LOYyMKgiAKg0s6mLXVFS9oHJt3d4k27cht1URhY+VRI9feQYiVyJ9QFbyPjpFm2h1qctcjvOBhAe3KdQlpwtHjycll2oSWvpYLrHbBTRORtgMLcz1ok9sdtqbRxcEBzAaIouBgH3t6wWB+ogkBzMUzJsZJ/2xMIPuAVU4uim/vV6xLJCEGRfxbw+29tFjlTqon8rzkR4wtSOI4+VuGJpNDIoYfB5G/gzPMRwEx0j4Cff+oBw3ZORdlE26q1iW5xHdg8VnvemeF7VpeEoyR+I92MLVK2naJ9zrR0nk115WJkTZYjDVTPfdC2hDY+ho54MRjBsW53l3BWaQej5CXnEJeUtc7LzEYjV6JlY0OmfWJjZFFJTZXdDjAw9SL85KQlgzwS25XKExwvpHVWCEQQg09QnuPuo1tS4+7ks1QYkK0jvOrxAVfaSoFf67NtDvU2sGLwEtkgWEi0VeolqfrUrpgv821ZUaoJQiWONh3BKY3wkOEYI6Ac1SK9hl9rPHQRUH5GPAylASXnJvwFXRJwnsnFvw7BzWd5iXBGNEsP3JLutkwW4p2PWqEDUP94/5z2FCLdVI5eg7DvziueoPsymlfknPo6v2afL1hmB+xRUnXXKWLyQ113HT7Hc1LfrSwIDft8MMeWwimDG3rttPpGFKyh2SXIWBXPya7DJqX7DnOd+HnoF/vfBXaxKogMGMt1sosvimh3be4RSjABjtknGqXcrT/ZcnXE6aKwrrXeUJoldX+6aujUcsvV+U72ouEr97MvMEp4riwlW9bPb3jQ6yVq/Id7UWSiPBwS9DxoER+mOD5ygehxGRHe4EkEj5Y2xmz8Yi9rS9BTI8Wnfgd7UWSyADBEhxoponzR89L0rirrMp3tBdJoiDsx0pqAQTJS1LLT1HlldOOjfJFLqzQZlaGagnqtKnlt6eochPt2zNcsv0T9lFN9ewlP1P56KFvh+p/ZAckdPJV005wsfPXBLbzc3L5M53rp5+rB37035vIcVRajuHCSVJMm3EUyysx2tQ6H6gK3kR7/znC5G/mkRzT/Q0t+/DiZMLKKBQZz/h+2oea+GLJpLn5qutd19HF892fXaUXtpEDyXH2FHs1QQtfEhtEPlB3H2kWWDQ1+HzJTCDjbs01g9AxxACVxYfyTFpOm4ac9NKprld45ge+m71QtIkucA/73/RTKkf49lymbbhznt/T73xp2khIjwWpREtQyUtCHg21FA3rEq9Ke8gv4SGa9yNvuT/6LG1bXS/cRBv8kt5caUlp2lbrp94AGtUTsu4ybbqyNhIPT0zJhFVpW/xVLr76A0k/4e1O4jXQZhbCYtrA+06++eVpw0uZtGPofeaWoESbWn7v2neoKi+kHT3L8r+FtOf5T3b0twI0xST1OmjbYjakiHZaKbYCbVAaej+1PcjGtJK0bcJ8SerHI9ErqsoNnZvRNs8PMNJuCcA0c6CXd/zspTqfpc1UaBnaqS2xNG0PlAaSt2GWYJqB5HlJepWhniujD0O7cJRcgbb1blYle0KbLY22K8ksV8ld/RBpvkX+fAq00+PkF/oIaW+Jtidf2ZUbnVBOiLfOglHv8nxJOhN4jLj2oMofZiYLcGXa3O501HdecG7sXVIybdPbW/m33PGQyqAreA35qQTaHj1wPJiff4jZLcfmmpPT9jBTlUtiezA4IARZMIpaghltOm8Pj6OAPjLa2yvTtngPcxSr5IV3+6yXLUc7hxX/5m8NzL0RTtvnFx70RUONDyWctl/8AvAkVfmIdmATPaB9hDackFp+eq6MWX5E6WyA9jmnI6sSbpE4P7NtK9IWhwcvu3MCbXH0b4vvYMv78TK0mTLO6oNF8WGwH/kOm53K1AWevqHj5gZoD0yqRFAk+Q9clbZwT/3MVTTQtgZip8x6/VK02RxrJA9mu6A6xqAp4pmHH0MtP5bR3ABtwfKwJVXCTXE3J7sy7RFHm9Ey0RZDGH72Sp/laKdPBTKRiaYlhzbQhruu58qoS5Bm6zdBm7vnvuip8t8nWOIr0x5wtJl2MNKmr1VPL51p+WVpM/dxrisTpicGVjxGc2U0ID5yi7PAn6Et1NbeidR0Pp+gzX93bmiaacf812d6Z2naaSIBMU3sTJVhuTK4R+3sF2yCtqBKHGErVySC27MybcGsX6S3pctQZ8VahTYr5kOIZmMvcieo5cfHzY3Q5r/N5apkyGHfY4fapigCSpsrEh79KqDN/Sqnz7YItBfZ2/xKH1DLoDvlzBiZa4lJRx03N0JbAMvfDcpZCLdApP3S5/Jyzg8RaOeD7lz4SX39ChptS2DATiL4kj3hwv3faihDzCakiQRdeROFgcxOBRUjTfZbQPuSFnbnwgufCmkLSiOJ9W2iehFoS0kAoVlCyPx8SuW8J8aS83tXRJsrnvQBEeMk4pW1tyJLuRuWSNBLSrw3ZHZqT3sSimnXAilz88yL+oppC787YyF4ykK/NUWlHJQ2vOaLvjJa9MZ/YlfVaAvKbaDRFqWYdqqjtSAVNjsV0fILaMsSlqUd+0IzmMz1G7A87WI6JWmPPkUbLykh7po6OxU8O7UodjO0rV/8KumWe65ccArGZhXSdqf8wCLa2qixMm20uFijTVcmGanj5oZoz/NLZw8ub9hUPPCTtF3RoC+i3V1b304DfXKQSqVNLT893r5Ib4ei/C1Nm7sTqSoR+pY06H+KtudIr9bdjiaxs+LivgCTWJEibepwIW5+Me3gqXMsirToURFt6y57hpwe/ZzbBM6HgYLtixF9wSQ30fbcO9khKqL9g9skeyptKZswK0E7tQSF/JlEm6UZkBDWZuxtSwwEMlePWyTym54F2vOBIMIDINCW9KBaTlJIm9sGnmpve1PxwgP1rBjt1BLkvZc8MPkvpjP7kDrvDdLm7oQnR3M8+Y24S3nu3gM32m1Pq8kpoB3zjvebbVnFlxSFWoK5+0ho57NTwfKLkdTDJmnzQCBYJblF4rzIhy0XJ4m5l0q6kHpgAe22ZpKuECdRcMNDmoVGiLYXV80d9vRgykZp8xA+GRb5oKn+tGWjUlNBz6tvny+gLeTo0ojhp2kzeyh1X8hv5KvmWmO9lHvDtHkg0HsQRhBP4bAsbSF2ajvKa7rNtMVUYaqXP0+bTSdjrrk7TFfNhbXqkCzwxmnnHIkVwi0UtaBi6YirYMSqJzPSjqWFRJisgXZa/QRBKjemtGnMb66Fp7ZAm1cE+mNzicny8W2uFKRgomWm3RK0qJddZR2008q+qctoM8vvP3NZ0AZpcyyOUI6g2lfL0xYqd1NbPhMDbXHI4o7sWmjbDrVvuz7RT+MZneGHmdnboM0zYxz2nXrQCrmbN2GgfBAPROtJ4q4wZPHakzXRTpXHiBjxLZoO0bPAW6I91McKV6tfXoG2eF5X/JJg5qW049HUFn++z210wbv5FG1mCe7FbNGYvjHKsGna1h8dt1bSLdDuSZLkz7yWKWsaBkphAGXnsOWKQamaSPDcE/nKsnoSsz4G3Hl+apgUw94o7bmqwuTwn0pbmcKB1LhmeckEHyhFc4WKikV0Gk25GyJyC99N5lwubNF+dIkHFcC5hUoalbo6vpAkn+WU0n6VM2nyOWL14r7mbC9XUZzRlm4jShs7oVwnV7qieFxcpwzCXnGjRbN10QKMEm0l4hqGf+VqeSWTpi5vcadcPtEusxptSwyX8IGykLanTMMoPzdBXd0ca2wSW7HZzM7EV4t+FdqqKDNBFFHf/DSSf76nutor0xb7Gw9zFdB23DdlyFhiJsgocT1kWlsmcPpezAJfBYc5nmuCvR7asfwr/D3tMivSFmouhTI3I23Pu9cuvQRt0r1/FIjDGgu0nZeiAw0TytZFW4QiFn58nrY4JLh6ZZpwGtKl7Clym5eiXSgu8yMo7R9LfjeV/ecGJvksp4u/yN5nlfZgJmZFMLv2QTxCyqHkjlA3P2TGXcS28L1sLkhXORcZtZKX9zY+s6hlurA6E2ShrIG2bGvoVke9cG8ue6JgM9dbeyYZIocYztwynGs4LJgsb7ww8iAUysxxfGJHx/D/irR3Ulqab2934Ej8IP8Xu6U7QeT/6MzwE9FqIwIAAAAASUVORK5CYII=">
+
+<!-- Meta Tags Generated via http://heymeta.com -->
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Montserrat:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TDGQ68X5D1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'G-TDGQ68X5D1');
+	</script>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header">
+
+			<div id="header-wrap">
+
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo" style="padding-left:30px">
+						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo1.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo3.png" alt="Canvas Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="sub-title" style="padding-right:30px">
+
+						<ul>
+							<li><a href="sistemasderiego.html"><div>Sistemas de riego</div><span>Automatización y más</span></a>
+								<ul>
+								<li><a href="sistemasderiego.html"><div>Sistemas para Jardines</div></a></li>
+								<li><a href="riegobalcones.html"><div>Sistemas para Balcones</div></a></li>
+								</ul>
+							</li>
+							<li><a href="fumigacion.html"><div>Fumigación</div><span>Control Dengue</span></a></li>
+							<li><a href="desinfeccion.html"><div>Desinfección</div><span>Ante el COVID-19</span></a></li>
+							<li><a href="jardinesverticales.html"><div>Jardines verticales</div><span>Para hogares y comercios</span></a></li>
+							<li><a href="terrazasverdes.html"><div>Terrazas verdes</div><span>Para hogares y comercios</span></a></li>
+							<li><a href="fotos.html"><div>Imágenes</div><span>De trabajos</span></a></li>
+							<li><a href="#contacto"><div>Contacto</div><span>Solicita cotizacion</span></a></li>
+                        </ul>
+
+
+					</nav><!-- #primary-menu end -->
+
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix">
+
+			<div class="slider-parallax-inner">
+
+				<div class="swiper-container swiper-parent">
+					<div class="swiper-wrapper">
+						
+						<div class="swiper-slide dark" style="background-image: url('images/slider/swiper/slide4.jpg');">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 data-caption-animate="fadeInUp">Sistemas de riego</h2>
+									<p class="d-none d-sm-block" data-caption-animate="fadeInUp" data-caption-delay="200">Soluciones de automatización de riego para todo tipo de espacios.</p>
+								</div>
+							</div>
+						</div>
+
+						
+						<div class="swiper-slide dark" style="background-image: url('images/fumigacion.jpg');">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 data-caption-animate="fadeInUp">Fumigación de Jardines</h2>
+									<p class="d-none d-sm-block" data-caption-animate="fadeInUp" data-caption-delay="200">Servicio de Fumigación con derribante de amplio espectro, rápido y eficaz.</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="swiper-slide dark" style="background-image: url('images/slide-goteo.jpg');">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 data-caption-animate="fadeInUp">Riego Localizado</h2>
+									<p class="d-none d-sm-block" data-caption-animate="fadeInUp" data-caption-delay="200">Soluciones de automatización de riego por goteo para balcones y terrazas.</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="swiper-slide dark" style="background-image: url('images/jv.jpg');">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 data-caption-animate="fadeInUp">Jardines verticales</h2>
+									<p class="d-none d-sm-block" data-caption-animate="fadeInUp" data-caption-delay="200">Por sus beneficios ambientales, económicos y para la salud, la construcción de jardines verticales y terrazas verdes son una tendencia en el mundo.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
+					<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+					<div class="slide-number"><div class="slide-number-current"></div><span>/</span><div class="slide-number-total"></div></div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+        
+				<div class="row bottommargin-lg common-height">
+
+					<div class="col-lg-6 dark col-padding ohidden" style="background-color: #7ea000;">
+						<div>
+							<h3 class="uppercase" style="font-weight: 600; margin-bottom: 10px">Nosotros</h3>
+							<p style="line-height: 1.8;">Vivir el Verde nació en el 2011 a partir de una idea familiar con el objetivo simple y claro de dedicarnos a hacer algo por la vida, el medio ambiente y la sustentabilidad. Lograr que la naturaleza y el “Verde” como forma de Vida tengan un espacio más preponderante en nuestra vida cotidiana.</p>
+							<i class="icon-bulb bgicon"></i>
+						</div>
+					</div>
+
+					<div class="col-lg-6 dark col-padding ohidden" style="background-color: #6f8900;">
+						<div>
+							<h3 class="uppercase" style="font-weight: 600; margin-bottom: 10px">Cómo trabajamos</h3>
+							<p style="line-height: 1.8;">Nuestro trabajo se basa en lograr combinar lo natural con el diseño y la estética, sumando espacios Verdes, agradables, únicos y diferenciadores.
+Somos apasionados por lo que hacemos e intentamos mejorar día a día, sabiendo que hay mucho por hacer cuando se trata de cuidar nuestra mundo.</p>
+							<i class="icon-cog bgicon"></i>
+						</div>
+					</div>
+
+
+
+				</div>
+
+			<div class="content-wrap" style="padding-top:0;">
+
+				<div class="container clearfix" style="padding-bottom:110px">
+                
+                	<div class="heading-block center bottommargin-md">
+						<h2>Qué hacemos</h2>
+						<span>Conocé nuestras soluciones.</span>
+					</div>
+
+
+					<div class="col_one_third nobottommargin">
+						<div class="feature-box media-box">
+							<div class="fbox-media">
+								<a href="jardinesverticales.html"><img src="images/jardinvertical-01.jpg" alt="jardin-vertical"></a>
+							</div>
+							<div class="fbox-desc">
+								<a href="jardinesverticales.html"><h3>Jardines verticales.<span class="subtitle">Ecología + diseño</span></h3></a>
+								<p>Representan un producto que combina el diseño y el paisajismo, aportando vida y devolviendo parte del Verde que las ciudades fueron perdiendo. Logramos que nuestros clientes tengan un jardín en un lugar inusual, embelleciendo una pared y/o espacio olvidado o desaprovechado, aportando belleza y múltiples beneficios.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col_one_third nobottommargin">
+						<div class="feature-box media-box">
+							<div class="fbox-media">
+								<a href="sistemasderiego.html"><img src="images/riego-01.jpg" alt="riego-automatizado"></a>
+							</div>
+							<div class="fbox-desc">
+								<a href="sistemasderiego.html"><h3>Sistemas de riego.<span class="subtitle">Automatización.</span></h3></a>
+								<p>Aportan de una forma eficiente el agua para lograr que el césped y las plantas tengan el suministro necesario de nutrientes, favoreciendo su crecimiento. El riego automatizado por aspersión profesionalmente diseñado e instalado representa una solución para la vida cotidiana y una gran inversión a futuro.</p>
+							</div>
+						</div>
+					</div>
+                    
+					<div class="col_one_third nobottommargin col_last">
+						<div class="feature-box media-box">
+							<div class="fbox-media">
+								<img src="images/riegogoteo.jpg" alt="insumos-piscinas">
+							</div>
+							<div class="fbox-desc">
+								<h3>Riego por goteo.<span class="subtitle">Para balcones y terrazas.</span></h3>
+								<p>En Vivir el Verde desarrollamos sistemas de riego por goteo para colocar en balcones y/o terrazas y mantener todas tus plantas con poco mantenimiento. Un sistema ideal para que el no tiene tiempo de regar con frecuencia las plantas y flores de su balcón.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+                
+				<div class="section light notopmargin" style="padding-top:60px; margin-bottom:0; padding-bottom:0">
+					<div class="container clearfix">
+                    
+						<div class="heading-block center">
+							<h2>Beneficios</h2>
+                            <p>De los jardines verticales</p> 
+						</div>
+
+						<div class="col_one_third">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<img src="images/oxigeno-01.svg" alt="oxigeno" width="90">
+								</div>
+								<h3>Generan oxígeno</h3>
+							</div>
+						</div>
+
+						<div class="col_one_third">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<img src="images/freshair-01.svg" alt="oxigeno" width="90">
+								</div>
+								<h3>Mejoran calidad de aire</h3>
+							</div>
+						</div>
+
+						<div class="col_one_third col_last">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<img src="images/filter-01.svg" alt="oxigeno" width="90">
+								</div>
+								<h3>Filtran el polvo</h3>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="col_one_third nobottommargin">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<img src="images/aislamiento-01.svg" alt="oxigeno" width="90">
+								</div>
+								<h3>Mejoran aislamiento</h3>
+							</div>
+						</div>
+
+						<div class="col_one_third nobottommargin">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<img src="images/temperatura-01.svg" alt="oxigeno" width="90">
+								</div>
+								<h3>Regula temperaturas</h3>
+							</div>
+						</div>
+
+						<div class="col_one_third nobottommargin col_last">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<img src="images/calidadvida-01.svg" alt="oxigeno" width="90">
+								</div>
+								<h3>Generan bienestar</h3>
+							</div>
+						</div>
+                        
+						<div class="clear" id="contacto"></div><div class="line"></div>
+
+					</div>
+				</div>
+                
+				<div class="row">
+					<div class="col-lg-4 bgcolor">
+						<div style="padding: 60px;">
+							<h2 class="font-body t600 ls1" style="color:#fff; line-height:32px">¿Te gustaría recibir un presupuesto? Dejanos tu consulta y te responderemos a la brevedad.</h2>
+							<h2 class="font-body t600 ls1" style="color:#fff; line-height:30px"><i class="icon-phone"></i> (011) 6598-2602<br><i class="icon-phone"></i> (011) 6890-9299</h2>
+                        </div>
+					</div>
+					<div class="col-lg-8 bgcolor">
+						<div class="col-padding">
+							<div class="rapido-contact-widget dark clearfix">
+								<form id="rapido-contact-form" name="rapido-contact-form" action="https://submit.jotformz.com/submit/81836519384669/" method="post" class="rapido-contact-form nobottommargin">
+								<input type="hidden" name="formID" value="81836519384669" />
+                                	<div class="row">
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                    	<input type="text" class="required sm-form-control input-block-level not-dark" id="input_3" name="q3_nombre" value="" placeholder="Nombre completo" />
+									</div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                    	<input type="email" class="required sm-form-control email input-block-level not-dark" id="input_4" name="q4_email" value="" placeholder="Email" />
+                                    </div>
+                                    </div>
+									<div class="row">
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                    	<input type="text" class="required sm-form-control input-block-level not-dark" id="input_5" name="q5_telefono" value="" placeholder="Teléfono" />
+									</div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                    	<input type="text" class="required sm-form-control input-block-level not-dark" id="input_6" name="q6_localidad" value="" placeholder="Localidad" />
+                                    </div>
+                                    </div>
+									<textarea class="required sm-form-control input-block-level not-dark short-textarea" id="input_7" name="q7_consulta" rows="3" cols="30" placeholder="Tu consulta"></textarea>
+									
+									<button type="submit" id="input_2" name="rapido-contact-form-submit" class="button button-small button-rounded button-light button-white nomargin" value="submit">ENVIAR</button>
+									<input type="hidden" id="simple_spc" name="simple_spc" value="81836519384669" />
+									  <script type="text/javascript">
+                                      document.getElementById("si" + "mple" + "_spc").value = "81836519384669-81836519384669";
+                                      </script>
+                                </form>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+				<div class="section dark notopmargin footer-stick" style="margin-top:0px;">
+
+					<h4 class="uppercase center">Qué dicen <span>nuestros clientes</span> de nosotros</h4>
+
+					<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+						<div class="flexslider">
+							<div class="slider-wrap">
+								<div class="slide">
+									<div class="testi-content">
+										<p>Muy conforme con el excelente trabajo y la dedicación puesta para el buen logro del jardín vertical</p>
+										<div class="testi-meta">
+											Susana
+											<span>Casa en Villa Devoto · Nov. 2017</span>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="testi-content">
+										<p>Quedamos encantados con nuestro rinconcito, era un espacio reducido, gris, triste y ahora se convirtió en un verdadero jardín que disfrutamos a diario. Recomiendo 100% a Vivir el Verde, la instalación fue impecable y siempre están en contacto para asegurarse que todo esté bien.</p>
+										<div class="testi-meta">
+											Mariela
+											<span>La Azienda Recoleta · Febrero 2018</span>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="testi-content">
+										<p>Muy buen trabajo y dedicación, nos encantó el resultado final. Buen servicio post venta de mantenimiento, lo recomiendo.</p>
+										<div class="testi-meta">
+											Vanesa
+											<span>Casa en barrio privado de Pilar  · Dic. 2017</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section><!-- #content end -->
+        
+        
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark" style="background-color:#7ea000;">
+
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half" style="color:#fff">
+						Copyright &copy; 2018 Todos los derechos reservados<br>
+						<div class="copyright-links"><a href="jardinesverticales.html" style="color:#fff">Jardines verticales</a> / <a href="terrazasverdes.html" style="color:#fff">Terrazas verdes</a> / <a href="sistemasderiego.html" style="color:#fff">Riego automatizado</a></div>
+					</div>
+
+					<div class="col_half col_last tright"  style="color:#fff">
+						<div class="fright clearfix">
+							<a href="#" class="social-icon si-small si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-instagram">
+								<i class="icon-instagram"></i>
+								<i class="icon-instagram"></i>
+							</a>
+
+						</div>
+
+						<div class="clear"></div>
+
+						<i class="icon-envelope2"></i> info@vivirelverde.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +54 (011) 6598-2602 <span class="middot">&middot;</span>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+            
+		</footer><!-- #footer end -->
+        
+
+	</div><!-- #wrapper end -->
+    	
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+	
+	<script>
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>
+	
+	
+	<a href="https://api.whatsapp.com/send?phone=5491168909299&text=Estoy%20en%20su%20sitio%20web%20y%20quiero%20saber" onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5491168909299&text=Estoy%20en%20su%20sitio%20web%20y%20quiero%20saber')" class="float" target="_blank">	
+		<i class="fab fa-whatsapp my-float"></i>
+	</a>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
