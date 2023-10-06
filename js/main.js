@@ -2,6 +2,14 @@
 
 let valorMetroCuadrado = 500;
 let manoDeObra = 1.25;
+let riegos = []; // almacena varios valores de riegos
+
+// objeto que almacene los datos de los riegos
+function Riego(largo, ancho) {
+    this.largo = largo;
+    this.ancho = ancho;
+    this.area = largo * ancho;
+}
 
 function calcularValorRiego () {
 
@@ -11,9 +19,12 @@ function calcularValorRiego () {
         let largoTerreno = parseInt(prompt("Ingrese el largo del terreno en metros:"));
         let anchoTerreno = parseInt(prompt("Ingrese el ancho del terreno en metros:"));
 
-        let areaTerreno = largoTerreno * anchoTerreno;
+        let riego = new Riego(largoTerreno, anchoTerreno);
 
-        let valorRiego = (areaTerreno + valorMetroCuadrado) * manoDeObra;
+        let valorRiego = (riego.area + valorMetroCuadrado) * manoDeObra;
+
+        riegos.push(valorRiego); // agrega el valor de cada riego al arreglo "riegos"
+
         alert("El valor del riego es de " + valorRiego + " Ars. Este es un valor aproximado del total del trabajo incluyendo insumos y mano de obra.");
 
         let respuesta = prompt("Desea cotizar el valor de otro riego? Indique 'S' o 'N'.");
@@ -42,6 +53,8 @@ function calcularValorRiego () {
             } 
         }
     }
+
+    console.log(riegos);
 }
 
 calcularValorRiego();
